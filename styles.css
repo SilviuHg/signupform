@@ -1,0 +1,161 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: logoFont;
+  src: url("Norse-Bold.otf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-section {
+  width: 40%;
+  height: 100vh;
+  position: relative;
+  background-image: url("sign-up-form.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.credit {
+  position: absolute;
+  width: 100%;
+  bottom: 5px;
+  color: white;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+
+.emph {
+  font-style: italic;
+}
+
+.logo-bar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 15px 0px 15px 0px;
+  background-color: rgba(0, 0, 0, 0.3);
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 25%;
+}
+
+.logo-bar p {
+  color: white;
+  font-family: logoFont, sans-serif;
+  font-size: 72px;
+  margin: 0px;
+}
+
+.right-section {
+  width: 60%;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.header-text {
+  width: 60%;
+  padding: 60px 0px 15px 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+fieldset {
+  width: auto;
+  background-color: white;
+  border: 0px;
+  padding: 20px 0px 30px 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  box-shadow: rgba(100, 100, 111, 0.2) 3px 3px 2px 0px;
+}
+
+fieldset p {
+  padding-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.form-row input {
+  width: 250px;
+  padding: 5px 4px 4px 7px;
+  border-radius: 3px;
+  border: 1px solid #e5e7eb;
+  font-family: "Roboto", sans-serif;
+}
+
+.form-row input:focus {
+  outline: none;
+  border: 1px solid blue;
+  box-shadow: rgba(100, 100, 111, 0.2) 3px 3px 2px 0px;
+}
+
+.btn {
+  margin-top: 20px;
+  margin-left: 35px;
+  padding: 12px 45px;
+  border: 1px solid #576cbc;
+  border-radius: 5px;
+  color: white;
+  background-color: #576cbc;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  box-shadow: rgba(100, 100, 111, 0.2) 3px 3px 2px 0px;
+  cursor: pointer;
+}
+
+.btn-div p {
+  margin-left: 35px;
+  margin-top: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.login {
+  color: #576cbc;
+  cursor: pointer;
+}
+
+.error input:invalid {
+  border: 1px solid red;
+}
+
+.output {
+  margin: 40px 0px 0px 0px;
+  padding: 10px 0px 0px 0px;
+  color: red;
+  position: absolute;
+}
